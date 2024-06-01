@@ -3,13 +3,13 @@ import React from "react";
 
 import mockup from "@/assets/iPhone-13-Pro-Front.svg";
 import strip from "@/assets/hero-strip.svg";
-import landingPageData from "@/data.json";
+import data from "@/data.json";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { CirclePlay, MoveRight } from "lucide-react";
 
 const Hero = () => {
-  const { headline, subheadline, ctaButtons } = landingPageData.hero;
+  const { headline, subheadline, ctaButtons } = data.hero;
 
   return (
     <div className="mt-4 h-full w-full grid grid-cols-2" id="home">

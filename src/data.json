@@ -16,19 +16,19 @@
   },
   "features": [
     {
-      "title": "Smart Reminders",
-      "description": "Never miss an important event with smart reminders.",
-      "icon": "https://via.placeholder.com/100"
+      "title": "budgeting intervals",
+      "description": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+      "icon": "sparkle"
     },
     {
       "title": "Personalized Insights",
-      "description": "Get insights tailored to your preferences and habits.",
-      "icon": "https://via.placeholder.com/100"
+      "description": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+      "icon": "box"
     },
     {
       "title": "Secure Cloud Sync",
-      "description": "Sync your data securely across all your devices.",
-      "icon": "https://via.placeholder.com/100"
+      "description": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+      "icon": "package"
     }
   ],
   "testimonials": [
