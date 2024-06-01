@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 
-const HamburgerMenu: React.FC = () => {
+const MobileNavMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,19 +12,17 @@ const HamburgerMenu: React.FC = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="md:hidden relative overflow-hidden">
       <button
-        className="relative z-20 p-2 focus:outline-none"
+        className="relative z-20 p-2 focus:outline-none transition-all"
         onClick={toggleMenu}
       >
-        <span className="block w-8 h-1 bg-black mb-1"></span>
-        <span className="block w-8 h-1 bg-black mb-1"></span>
-        <span className="block w-8 h-1 bg-black"></span>
+        {isOpen ? <X /> : <Menu />}
       </button>
 
       <div
         className={cn(
-          "fixed inset-0 z-10 flex flex-col items-center justify-center bg-white transition-transform duration-300",
+          "fixed inset-0 z-10 h-screen flex flex-col items-center justify-center bg-white transition-transform duration-300",
           { "translate-x-full": !isOpen }
         )}
       >
@@ -40,7 +39,7 @@ const HamburgerMenu: React.FC = () => {
           <a href="#features" className="text-2xl font-medium">
             Features
           </a>
-          <button className="mt-8 px-4 py-2 bg-blue-600 text-white rounded-md">
+          <button className="mt-8 px-4 py-2 bg-brand-red text-white rounded-md">
             Download
           </button>
         </nav>
@@ -49,4 +48,4 @@ const HamburgerMenu: React.FC = () => {
   );
 };
 
-export default HamburgerMenu;
+export default MobileNavMenu;

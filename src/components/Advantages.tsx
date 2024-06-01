@@ -10,19 +10,23 @@ const Advantage = () => {
   const advantagesArray = data.advantages;
   return (
     <>
-      <div className="mt-48 h-full w-full grid grid-cols-2">
+      <div className="md:mt-48 h-full w-full grid grid-cols-1 md:grid-cols-2">
         <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
           <p className="uppercase tracking-widest text-brand-red">Advantages</p>
-          <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 mt-1 capitalize">
             Why Choose Uifry?
           </h1>
           <AdvantageItem {...advantagesArray[0]} />
         </div>
         <Image src={mockup} className="" alt={"App Mockup image"} />
       </div>
-      <div className=" h-full w-full grid grid-cols-2">
-        <Image src={mockup2} className="col-span-1" alt={"App Mockup image"} />
-        <div className="col-span-1 flex flex-col justify-center mb-24">
+      <div className=" h-full w-full grid -grid-cols-1 md:grid-cols-2">
+        <Image
+          src={mockup2}
+          className="max-md:order-2 col-span-1"
+          alt={"App Mockup image"}
+        />
+        <div className="col-span-1 p-8 flex flex-col justify-center md:mb-24">
           <AdvantageItem {...advantagesArray[1]} />
         </div>
       </div>
@@ -50,11 +54,11 @@ const AdvantageItem = ({
     <div>
       <span className="flex gap-2 items-center">
         {IconComponent ? (
-          <IconComponent className="w-10 h-10 p-2.5 rounded-full text-primary-foreground bg-brand-red" />
+          <IconComponent className="w-10 h-10 aspect-square p-2.5 rounded-full text-primary-foreground bg-brand-red" />
         ) : (
-          <Image src={icon} width={24} height={24} alt="feature icon " />
+          <Image src={icon} width={24} height={24} alt="feature icon" />
         )}
-        <p className="text-[28px] font-bold">{title}</p>
+        <p className="text-xl md:text-[28px] font-bold">{title}</p>
       </span>
       <p className="text-muted-foreground mt-3 max-w-xl">{description}</p>
     </div>

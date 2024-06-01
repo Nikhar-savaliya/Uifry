@@ -29,14 +29,14 @@ const Footer = () => {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="font-inter w-full max-w-7xl"
+      className="w-full max-md:mt-16 p-8"
     >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-2">
-        <div className="flex flex-col justify-between lg:flex-row">
-          <div className="flex flex-col gap-4 items-start mr-16">
+        <div className="flex flex-col  justify-between md:flex-row">
+          <div className="flex flex-col mb-8 md:mb-0 gap-4 items-start mr-16">
             <Image
               priority={true}
               unoptimized={true}
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Navigations */}
-          <div className="grid gap-14 grid-cols-4 mr-auto">
+          <div className="grid gap-10 md:gap-14 grid-cols-2 md:grid-cols-4 mr-auto">
             <FooterLinkComponent
               title={"links"}
               linksArray={navigation.links}
@@ -74,7 +74,7 @@ const Footer = () => {
             />
           </div>
 
-          <form className="flex flex-col gap-4 items-end">
+          <form className="flex flex-col gap-4 items-end mt-10">
             <input
               type="text"
               placeholder="Email"
@@ -86,7 +86,7 @@ const Footer = () => {
           </form>
         </div>
         <div className="mt-16 border-t pt-8 sm:mt-20 lg:mt-24 ">
-          <p className=" leading-5 text-muted-foreground text-center mb-8">
+          <p className="max-md:text-xs leading-5 text-muted-foreground text-center mb-8">
             Copyright 2022 uifry.com all rights reserved
           </p>
         </div>
@@ -109,17 +109,17 @@ const FooterLinkComponent = ({
 }) => {
   return (
     <div className="md:mt-0">
-      <h3 className="text-3xl capitalize font-semibold leading-6 tracking-tighter">
+      <h3 className="text-xl md:text-3xl capitalize font-semibold leading-6 tracking-tighter">
         {title}
       </h3>
-      <div className="mt-6 space-y-4">
+      <div className="mt-2 md:mt-6 space-y-2 md:space-y-4">
         {linksArray.map((item) => (
           <div key={item.name}>
             <Link
               href={item.href}
               target="_blank"
               rel="noreferrer"
-              className=" leading-6 "
+              className="leading-6"
             >
               {item.name}
             </Link>

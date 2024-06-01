@@ -6,10 +6,10 @@ const Faqs = () => {
   const faqArray = data.faqs;
 
   return (
-    <section className="w-full h-full mt-16" id="faqs">
+    <section className="w-full h-full mt-16 p-8" id="faqs">
       <div className="col-span-1 flex flex-col justify-center mb-8">
         <p className="uppercase tracking-widest text-brand-red">FAQ</p>
-        <h1 className="text-5xl max-w-lg font-bold mt-1 capitalize">
+        <h1 className="text-4xl md:text-5xl max-w-lg font-bold mt-1 capitalize">
           Frequently asked questions
         </h1>
       </div>
@@ -34,17 +34,17 @@ const FaqComponent = ({
   const indexForBackgroundColor = [1, 2, 5, 6, 9, 10];
   return (
     <div
-      className={`p-8 rounded-lg my-5 mr-5 ${
+      className={`rounded-lg md:p-8 my-5 mr-5 ${
         indexForBackgroundColor.includes(index)
           ? ""
-          : "lg:bg-brand-red text-background"
+          : "md:bg-brand-red md:text-background"
       }`}
     >
       <h2 className="text-xl font-semibold mb-2">{question}</h2>
       <p
         className={`${
-          indexForBackgroundColor.includes(index) ? "" : "lg:text-background"
-        }`}
+          indexForBackgroundColor.includes(index) ? "" : "md:text-background"
+        } text-muted-foreground`}
       >
         {answer}
       </p>

@@ -43,6 +43,12 @@
     @apply bg-background text-foreground;
     font-family: "Clash Display", "Courier New", Courier, monospace;
   }
+
+  .download-background {
+    background-image: url("../assets/download_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @font-face {

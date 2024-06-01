@@ -1,16 +1,16 @@
 import React from "react";
 
-import mockup from "@/assets/download_background_image.svg";
+import mockup from "@/assets/download_img.png";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
 
 const DownloadApp = () => {
   return (
-    <div className="relative mt-48 h-full w-full grid grid-cols-2 text-primary-foreground aspect-video">
-      <div className="col-span-1 px-8 flex flex-col mt-24 ml-8">
+    <div className="md:my-48 h-full w-full grid grid-cols-1 md:grid-cols-2 rounded-xl max-md:bg-black text-primary-foreground max-md:place-content-start download-background p-8">
+      <div className="col-span-1 md:px-8 flex flex-col  md:ml-8">
         <p className="uppercase tracking-widest text-brand-red">Download</p>
-        <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">
+        <h1 className="text-4xl  md:text-5xl font-bold mb-8 mt-1 capitalize">
           ready to get started?
         </h1>
         <p className="text-muted-foreground max-w-lg text-[18px] mb-4">
@@ -24,11 +24,6 @@ const DownloadApp = () => {
           Download
         </Button>
       </div>
-      <Image
-        src={mockup}
-        className="absolute w-full -z-50"
-        alt={"App Mockup image"}
-      />
     </div>
   );
 };

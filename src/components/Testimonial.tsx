@@ -7,27 +7,27 @@ import { Avatar, AvatarImage } from "./ui/avatar";
 
 const Testimonial = () => {
   return (
-    <div className="mt-24">
-      <span className="text-center">
+    <div className="mt-24 p-8">
+      <span className="md:text-center">
         <p className="uppercase tracking-widest text-brand-red">Testimonial</p>
-        <p className="text-5xl max-w-md mx-auto font-bold mb-8 mt-1 capitalize">
+        <p className="text-3xl md:text-5xl max-w-md mx-auto font-bold mb-8 mt-1 capitalize">
           what our users say about us?
         </p>
-        <div className="h-full w-full grid grid-cols-2 items-start">
+        <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 items-start">
           <div className="relative col-span-1">
             <Image
               src={testimonial_image}
-              className=""
+              className="max-md:pl-8"
               alt={"App Mockup image"}
             />
             <Image
               src={ellipse}
-              className="absolute -top-12 -left-12 -z-50"
+              className="absolute -top-7 -left-5 pl-8 md:-top-12 md:-left-12 -z-50"
               alt={"App Mockup image"}
             />
           </div>
-          <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
-            <h1 className="text-[28px] max-w-md text-start font-bold mb-8 mt-1 capitalize">
+          <div className="col-span-1 flex flex-col justify-center md:mt-16">
+            <h1 className="text-xl md:text-[28px] max-w-md text-start font-bold md:mb-8 mt-1 capitalize">
               the best financial accounting app ever!
             </h1>
             <p className="text-muted-foreground mt-3 max-w-xl text-start">
@@ -51,7 +51,7 @@ const Testimonial = () => {
                 <AvatarImage src="https://via.placeholder.com/50" />
               </Avatar>
             </div>
-            <p className="text-start font-bold">Nick Jonas</p>
+            <p className="text-start font-bold"> - Nick Jonas</p>
           </div>
         </div>
       </span>
