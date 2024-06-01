@@ -12,10 +12,14 @@ const Hero = () => {
   const { headline, subheadline, ctaButtons } = data.hero;
 
   return (
-    <div className="mt-4 h-full w-full grid grid-cols-2" id="home">
+    <div className="mt-4 h-full bg-red-50 w-full grid md:grid-cols-2" id="home">
       <div className="col-span-1 mt-32 flex flex-col justify-center p-8">
-        <h1 className="text-6xl font-bold mb-4 capitalize">{headline}</h1>
-        <p className="text-xl mb-6 capitalize">{subheadline}</p>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
+          {headline}
+        </h1>
+        <p className="text-xl mb-6 capitalize text-muted-foreground tracking-wide">
+          {subheadline}
+        </p>
         <div className="flex items-center gap-6 ">
           <Button className="rounded-sm flex items-center gap-2 h-14 px-8 text-lg">
             <Link href={ctaButtons[0].link}>{ctaButtons[0].text}</Link>
@@ -31,7 +35,7 @@ const Hero = () => {
         </div>
         <Image src={strip} alt="hero strip image" />
       </div>
-      <div className="relative col-span-1">
+      <div className="max-md:hidden relative col-span-1 ">
         <Image
           src={mockup}
           className="absolute mt-40 ml-40"

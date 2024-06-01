@@ -12,9 +12,7 @@ const Advantage = () => {
     <>
       <div className="mt-48 h-full w-full grid grid-cols-2">
         <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
-          <p className="uppercase tracking-widest text-accent-foreground">
-            Advantages
-          </p>
+          <p className="uppercase tracking-widest text-brand-red">Advantages</p>
           <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">
             Why Choose Uifry?
           </h1>
@@ -52,7 +50,7 @@ const AdvantageItem = ({
     <div>
       <span className="flex gap-2 items-center">
         {IconComponent ? (
-          <IconComponent className="w-10 h-10 p-2.5 rounded-full text-primary-foreground bg-accent-foreground" />
+          <IconComponent className="w-10 h-10 p-2.5 rounded-full text-primary-foreground bg-brand-red" />
         ) : (
           <Image src={icon} width={24} height={24} alt="feature icon " />
         )}

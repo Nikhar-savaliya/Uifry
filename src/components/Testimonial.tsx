@@ -9,9 +9,7 @@ const Testimonial = () => {
   return (
     <div className="mt-24">
       <span className="text-center">
-        <p className="uppercase tracking-widest text-accent-foreground">
-          Testimonial
-        </p>
+        <p className="uppercase tracking-widest text-brand-red">Testimonial</p>
         <p className="text-5xl max-w-md mx-auto font-bold mb-8 mt-1 capitalize">
           what our users say about us?
         </p>

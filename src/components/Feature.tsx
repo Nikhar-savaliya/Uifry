@@ -13,9 +13,7 @@ const Feature = () => {
         <Image src={mockup} className="absolute" alt={"App Mockup image"} />
       </div>
       <div className="col-span-1 flex flex-col justify-center mt-16">
-        <p className="uppercase tracking-widest text-accent-foreground">
-          features
-        </p>
+        <p className="uppercase tracking-widest text-brand-red">features</p>
         <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">
           uifry premium
         </h1>
@@ -50,7 +48,7 @@ const FeatureItem = ({
     <div>
       <span className="flex gap-2 items-center">
         {IconComponent ? (
-          <IconComponent className="w-6 h-6 text-accent-foreground" />
+          <IconComponent className="w-6 h-6 text-brand-red" />
         ) : (
           <Image src={icon} width={24} height={24} alt="feature icon " />
         )}

@@ -47,10 +47,10 @@ const Footer = () => {
               className="h-7 w-auto"
             />
             <p className="text-md max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
-              <Mail className="text-accent-foreground " /> help@frybix.com
+              <Mail className="text-brand-red " /> help@frybix.com
             </p>
             <p className="text-md max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
-              <Phone className="text-accent-foreground " /> +1 234 456 678 89
+              <Phone className="text-brand-red " /> +1 234 456 678 89
             </p>
           </div>
 

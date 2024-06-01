@@ -14,7 +14,7 @@ const Navbar = () => {
           </Link>
           <ul className="flex items-center gap-x-6 ml-9 font-medium text-xl">
             <li>
-              <Link href={"#home"} className="text-[#ff5555] font-extrabold">
+              <Link href={"#home"} className="text-brand-red font-extrabold">
                 Home
               </Link>
             </li>
