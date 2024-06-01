@@ -60,6 +60,32 @@
       "avatar": "https://via.placeholder.com/50"
     }
   ],
+  "faqs": [
+    {
+      "question": "What is the Financial Accounting App?",
+      "answer": "The Financial Accounting App is a comprehensive tool designed to manage your financial transactions, generate reports, and offer personalized insights to help you make informed financial decisions."
+    },
+    {
+      "question": "How secure is my data?",
+      "answer": "Your data security is our top priority. We use advanced encryption techniques and secure cloud storage to ensure your financial information is protected at all times."
+    },
+    {
+      "question": "Can I sync my data across multiple devices?",
+      "answer": "Yes, you can securely sync your data across all your devices, ensuring you have access to your financial information anytime, anywhere."
+    },
+    {
+      "question": "What kind of financial reports can I generate?",
+      "answer": "You can generate a variety of financial reports including income statements, balance sheets, cash flow statements, and expense reports."
+    },
+    {
+      "question": "Is there a free trial available?",
+      "answer": "Yes, we offer a 30-day free trial for new users to explore the app's features and benefits before committing to a subscription plan."
+    },
+    {
+      "question": "How can I contact customer support?",
+      "answer": "You can contact our customer support team via email at support@financialapp.com or through the in-app chat feature available in the app."
+    }
+  ],
   "pricing": [
     {
       "plan": "Standard",
