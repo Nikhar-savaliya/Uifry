@@ -10,19 +10,19 @@ const Advantage = () => {
   const advantagesArray = data.advantages;
   return (
     <>
-      <div className="mt-48 h-full w-full grid grid-cols-2" id="features">
+      <div className="mt-48 h-full w-full grid grid-cols-2">
         <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
           <p className="uppercase tracking-widest text-accent-foreground">
-            features
+            Advantages
           </p>
           <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">
-            uifry premium
+            Why Choose Uifry?
           </h1>
           <AdvantageItem {...advantagesArray[0]} />
         </div>
         <Image src={mockup} className="" alt={"App Mockup image"} />
       </div>
-      <div className=" h-full w-full grid grid-cols-2" id="features">
+      <div className=" h-full w-full grid grid-cols-2">
         <Image src={mockup2} className="col-span-1" alt={"App Mockup image"} />
         <div className="col-span-1 flex flex-col justify-center mb-24">
           <AdvantageItem {...advantagesArray[1]} />

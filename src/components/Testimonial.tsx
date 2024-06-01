@@ -15,10 +15,7 @@ const Testimonial = () => {
         <p className="text-5xl max-w-md mx-auto font-bold mb-8 mt-1 capitalize">
           what our users say about us?
         </p>
-        <div
-          className="mt-48 h-full w-full grid grid-cols-2 items-start"
-          id="features"
-        >
+        <div className="h-full w-full grid grid-cols-2 items-start">
           <div className="relative col-span-1">
             <Image
               src={testimonial_image}

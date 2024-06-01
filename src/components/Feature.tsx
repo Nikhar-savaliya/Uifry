@@ -8,7 +8,7 @@ import { Box, Package2, Sparkle } from "lucide-react";
 const Feature = () => {
   const featuresArray = data.features;
   return (
-    <div className="mt-4 h-full w-full grid grid-cols-2" id="features">
+    <div className="mt-4 h-full w-full grid grid-cols-2">
       <div className="relative col-span-1 rotate-[14.5deg]">
         <Image src={mockup} className="absolute" alt={"App Mockup image"} />
       </div>

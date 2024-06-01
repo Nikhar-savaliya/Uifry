@@ -22,7 +22,7 @@ const Hero = () => {
             <MoveRight />
           </Button>
           <Button
-            className="rounded-sm flex items-center gap-2 h-14 px-8 text-lg"
+            className="rounded-sm flex items-center gap-2 h-14 px-8 text-lg hover:bg-secondary hover:text-secondary-foreground"
             variant={"ghost"}
           >
             <CirclePlay />
