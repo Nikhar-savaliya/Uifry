@@ -1,4 +1,5 @@
 import Advantages from "@/components/Advantages";
+import DownloadApp from "@/components/DownloadApp";
 import Faqs from "@/components/Faqs";
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <Advantages />
       <Testimonial />
       <Faqs />
+      <DownloadApp />
     </main>
   );
 }
