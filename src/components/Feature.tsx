@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import data from "@/data.json";
 import mockup from "@/assets/iPhone-13-Pro-Front.svg";
-import { Box, LucideIcon, Package2, Sparkle } from "lucide-react";
+import { Box, Package2, Sparkle } from "lucide-react";
 
 const Feature = () => {
   const featuresArray = data.features;
