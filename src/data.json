@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "headline": "make the best financial decisions",
+    "subheadline": "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+    "ctaButtons": [
+      {
+        "text": "Get Started",
+        "link": "/get-started",
+        "icon": ""
+      },
+      {
+        "text": "Watch Video",
+        "link": "https://youtube.com"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Smart Reminders",
+      "description": "Never miss an important event with smart reminders.",
+      "icon": "https://via.placeholder.com/100"
+    },
+    {
+      "title": "Personalized Insights",
+      "description": "Get insights tailored to your preferences and habits.",
+      "icon": "https://via.placeholder.com/100"
+    },
+    {
+      "title": "Secure Cloud Sync",
+      "description": "Sync your data securely across all your devices.",
+      "icon": "https://via.placeholder.com/100"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Alex Johnson",
+      "feedback": "This app has revolutionized how I manage my daily tasks. Highly recommend!",
+      "avatar": "https://via.placeholder.com/50"
+    },
+    {
+      "name": "Emily Davis",
+      "feedback": "The personalized insights have been a game-changer for me.",
+      "avatar": "https://via.placeholder.com/50"
+    },
+    {
+      "name": "Michael Smith",
+      "feedback": "I love the secure cloud sync feature. It gives me peace of mind.",
+      "avatar": "https://via.placeholder.com/50"
+    }
+  ],
+  "pricing": [
+    {
+      "plan": "Standard",
+      "price": "$4.99/month",
+      "features": [
+        "Smart Reminders",
+        "Personalized Insights",
+        "Secure Cloud Sync"
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "$9.99/month",
+      "features": [
+        "Smart Reminders",
+        "Personalized Insights",
+        "Secure Cloud Sync",
+        "Priority Support"
+      ]
+    },
+    {
+      "plan": "Enterprise",
+      "price": "$29.99/month",
+      "features": [
+        "Smart Reminders",
+        "Personalized Insights",
+        "Secure Cloud Sync",
+        "Priority Support",
+        "Custom Integrations"
+      ]
+    }
+  ]
+}
