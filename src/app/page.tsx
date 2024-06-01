@@ -2,6 +2,7 @@ import Advantages from "@/components/Advantages";
 import DownloadApp from "@/components/DownloadApp";
 import Faqs from "@/components/Faqs";
 import Feature from "@/components/Feature";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Testimonial from "@/components/Testimonial";
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonial />
       <Faqs />
       <DownloadApp />
+      <Footer />
     </main>
   );
 }

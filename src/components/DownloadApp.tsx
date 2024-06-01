@@ -8,10 +8,10 @@ import { Download } from "lucide-react";
 const DownloadApp = () => {
   return (
     <div
-      className="relative mt-48 h-full w-full grid grid-cols-2 text-primary-foreground"
+      className="relative mt-48 h-full w-full grid grid-cols-2 text-primary-foreground aspect-video"
       id="features"
     >
-      <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
+      <div className="col-span-1 px-8 flex flex-col mt-24 ml-8">
         <p className="uppercase tracking-widest text-accent-foreground">
           Download
         </p>
