@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "Clash Display";
-  src: url("../font/ClashDisplayExtraLight.otf") format("opentype");
+  src: url("../font/ClashDisplayExtralight.otf") format("opentype");
   font-weight: 200; /* Example weight for extralight */
 }
 
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "Clash Display";
-  src: url("../font/ClashDisplaySemiBold.otf") format("opentype");
+  src: url("../font/ClashDisplaySemibold.otf") format("opentype");
   font-weight: 600; /* Example weight for semi-bold */
 }
 
