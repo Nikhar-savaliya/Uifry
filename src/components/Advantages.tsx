@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 import data from "@/data.json";
-import mockup from "@/assets/advantages_image.svg";
-import mockup2 from "@/assets/advantages_image2.svg";
+import mockup from "@/assets/advantages_image.png";
+import mockup2 from "@/assets/advantages_image2.png";
+import ellipse from "@/assets/ellipse.svg";
 import { Bell, Sparkle } from "lucide-react";
 import star from "@/assets/Star.svg";
 import gradient from "@/assets/gradient1.svg";
@@ -16,7 +17,7 @@ const Advantage = () => {
         <Image
           src={star}
           alt="star design"
-          className="absolute w-16 -right-28 top-28 rotate-[25deg]"
+          className="absolute w-16 -right-28 top-28 rotate-[25deg] dark:invert"
         />
         <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
           <p className="uppercase tracking-widest text-brand-red">Advantages</p>
@@ -25,7 +26,7 @@ const Advantage = () => {
           </h1>
           <AdvantageItem {...advantagesArray[0]} />
         </div>
-        <div className="relative">
+        <div className="relative col-span-1">
           {/* gradient */}
           <Image
             src={gradient}
@@ -33,9 +34,15 @@ const Advantage = () => {
             className="absolute -z-[101] left-0 bottom-4"
           />
           <Image
+            src={ellipse}
+            className="absolute top-0 -left-6 -z-10 dark:invert"
+            alt={"App Mockup image"}
+            priority={true}
+          />
+          <Image
             src={mockup}
             priority={true}
-            className=""
+            className="w-fit ml-auto"
             alt={"App Mockup image"}
           />
         </div>
@@ -44,7 +51,7 @@ const Advantage = () => {
         <Image
           src={star}
           alt="star design"
-          className="absolute w-12 left-1/2 -translate-x-1/2 max-md:left-1/4 max-md:-top-24"
+          className="absolute w-12 left-1/2 -translate-x-1/2 max-md:left-1/4 max-md:-top-24 dark:invert"
         />
         <div className="relative max-md:order-2">
           {/* gradient */}
@@ -54,8 +61,15 @@ const Advantage = () => {
             className="absolute -z-[101] right-0 bottom-4"
           />
           <Image
+            src={ellipse}
+            className="absolute top-0 left-0 -z-10 dark:invert"
+            alt={"App Mockup image"}
+            priority={true}
+          />
+          <Image
             src={mockup2}
-            className=" col-span-1"
+            priority={true}
+            className="w-fit ml-auto"
             alt={"App Mockup image"}
           />
         </div>
@@ -65,7 +79,7 @@ const Advantage = () => {
         <Image
           src={star}
           alt="star design"
-          className="absolute w-16 right-16 bottom-28 rotate-[25deg] -z-50 max-lg:bottom-0"
+          className="absolute w-16 right-16 bottom-28 rotate-[25deg] -z-50 max-lg:bottom-0 dark:invert"
         />
       </div>
     </>
@@ -96,9 +110,11 @@ const AdvantageItem = ({
         ) : (
           <Image src={icon} width={24} height={24} alt="feature icon" />
         )}
-        <p className="text-xl md:text-[28px] font-bold">{title}</p>
+        <p className="text-xl md:text-[28px] font-bold ">{title}</p>
       </span>
-      <p className="text-muted-foreground mt-3 max-w-xl">{description}</p>
+      <p className="text-muted-foreground mt-3 max-w-xl tracking-wide">
+        {description}
+      </p>
     </div>
   );
 };

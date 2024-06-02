@@ -30,7 +30,7 @@ const Testimonial = () => {
             />
             <Image
               src={ellipse}
-              className="absolute -top-7 -left-5 pl-8 md:-top-12 md:-left-12 -z-50"
+              className="absolute -top-7 -left-5 pl-8 md:-top-12 md:-left-12 -z-50 dark:invert"
               alt={"App Mockup image"}
             />
           </div>
@@ -38,7 +38,7 @@ const Testimonial = () => {
             <h1 className="text-xl md:text-[28px] max-w-md text-start font-bold md:mb-8 mt-1 capitalize">
               the best financial accounting app ever!
             </h1>
-            <p className="text-muted-foreground mt-3 max-w-xl text-start">
+            <p className="text-muted-foreground mt-3 max-w-xl text-start tracking-wide">
               “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
               ultricies. In ultrices malesuada elit mauris etiam odio. Duis
               tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -59,12 +59,12 @@ const Testimonial = () => {
                 <AvatarImage src="https://via.placeholder.com/50" />
               </Avatar>
             </div>
-            <p className="text-start font-bold"> - Nick Jonas</p>
+            <p className="text-start font-bold tracking-wide"> - Nick Jonas</p>
           </div>
           <Image
             src={star}
             alt="star design"
-            className="absolute w-12 md:left-0 bottom-0 -z-50  max-md:right-8 max-md:-bottom-24"
+            className="absolute w-12 md:left-0 bottom-0 -z-50  max-md:right-8 max-md:-bottom-24 dark:invert"
           />
         </div>
       </span>

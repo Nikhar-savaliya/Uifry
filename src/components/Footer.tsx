@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import logo from "@/assets/logo.svg";
+import LogoName from "@/assets/LogoName.svg";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -37,14 +38,15 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl  px-2">
         <div className="flex flex-col md:flex-row justify-between ">
           <div className="flex flex-col mb-8 md:mb-0 gap-4 items-start mr-16">
-            <Image
-              priority={true}
-              width={100}
-              height={40}
-              src={logo}
-              alt="logo"
-              className="h-7 w-auto"
-            />
+            <Link href={"/"} className="flex items-end gap-2">
+              <Image src={logo} alt="Logo" priority={true} />
+              <Image
+                src={LogoName}
+                alt="Logo"
+                priority={true}
+                className="dark:invert"
+              />
+            </Link>
             <p className="text-md max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
               <Mail className="text-brand-red " /> help@frybix.com
             </p>
@@ -105,7 +107,7 @@ const FooterLinkComponent = ({
 }) => {
   return (
     <div className="md:mt-0">
-      <h3 className="text-xl md:text-3xl capitalize font-semibold leading-6 tracking-tighter">
+      <h3 className="text-xl md:text-3xl capitalize font-semibold leading-6 tracking-wide">
         {title}
       </h3>
       <div className="mt-2 md:mt-6 space-y-2 md:space-y-4">

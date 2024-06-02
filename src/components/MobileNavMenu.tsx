@@ -1,8 +1,5 @@
-"use client";
-
 import React, { useState } from "react";
-import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,19 +9,13 @@ import {
 import Link from "next/link";
 
 const MobileNavMenu: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className="md:hidden  overflow-hidden">
+    <div className="md:hidden overflow-hidden">
       <DropdownMenu>
-        <DropdownMenuTrigger>
-          <Menu />
+        <DropdownMenuTrigger asChild>
+          <Menu className="h-[2.2rem] w-[2.2rem] scale-100" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="mt-2 mr-4 p-4 text-xl flex flex-col items-center bg-background">
+        <DropdownMenuContent className="mt-2 mr-4 p-4 text-xl flex flex-col items-center bg-background z-0">
           <DropdownMenuItem className="px-4 py-2 text-lg">
             <Link href={"#home"} className="text-brand-red font-extrabold">
               Home

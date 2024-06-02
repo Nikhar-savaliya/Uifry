@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 import data from "@/data.json";
-import mockup from "@/assets/feature_image1.png";
+import mockup from "@/assets/feature_image.png";
 import star from "@/assets/Star.svg";
+import ellipse from "@/assets/ellipse.svg";
 import { Box, Package2, Sparkle } from "lucide-react";
 import gradient from "@/assets/gradient1.svg";
 
@@ -19,7 +20,7 @@ const Feature = () => {
         <Image
           src={star}
           alt="star design"
-          className="absolute w-12 -left-24 top-1/4"
+          className="absolute w-12 -left-24 top-1/4 dark:invert"
         />
         {/* gradient */}
         <Image
@@ -27,10 +28,15 @@ const Feature = () => {
           alt="star design"
           className="absolute -z-[101] lg:left-10 top-0"
         />
-
+        <Image
+          src={ellipse}
+          className="absolute top-0 left-4 -z-10 dark:invert"
+          alt={"App Mockup image"}
+          priority={true}
+        />
         <Image
           src={mockup}
-          className="col-span-1 place-self-center"
+          className="col-span-1 place-self-center ml-auto"
           alt={"App Mockup image"}
         />
       </div>
@@ -68,15 +74,17 @@ const FeatureItem = ({
 
   return (
     <div>
-      <span className="flex gap-2 items-center">
+      <span className="flex gap-2 items-center tracking-wide">
         {IconComponent ? (
           <IconComponent className="w-6 h-6 text-brand-red" />
         ) : (
           <Image src={icon} width={24} height={24} alt="feature icon " />
         )}
-        <p className="text-[18px] font-bold">{title}</p>
+        <p className="text-[18px] font-bold ">{title}</p>
       </span>
-      <p className="text-muted-foreground mt-3 max-w-xl">{description}</p>
+      <p className="text-muted-foreground mt-3 max-w-xl tracking-wide">
+        {description}
+      </p>
     </div>
   );
 };

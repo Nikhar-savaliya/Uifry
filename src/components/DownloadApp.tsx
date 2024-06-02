@@ -20,19 +20,19 @@ const DownloadApp = () => {
       <Image
         src={star}
         alt="star design"
-        className="absolute w-16 -right-28 -top-28 rotate-[25deg]"
+        className="absolute w-16 -right-28 -top-28 rotate-[25deg] dark:invert"
       />
       <Image
         src={star}
         alt="star design"
-        className="absolute w-12 -left-24 top-28"
+        className="absolute w-12 -left-24 top-28 dark:invert"
       />
       <div className="col-span-1 md:px-8 flex flex-col  md:ml-8">
         <p className="uppercase tracking-widest text-brand-red">Download</p>
-        <h1 className="text-4xl  md:text-5xl font-bold mb-8 mt-1 capitalize">
+        <h1 className="text-4xl dark:text-primary md:text-5xl font-bold mb-8 mt-1 capitalize">
           ready to get started?
         </h1>
-        <p className="text-muted-foreground max-w-lg text-[18px] mb-4">
+        <p className="text-muted-foreground max-w-lg text-[18px] mb-4 tracking-wide">
           Risus habitant leo egestas mauris diam eget morbi tempus vulputate.
         </p>
         <Button

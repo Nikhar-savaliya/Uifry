@@ -11,11 +11,11 @@ const Faqs = () => {
       <Image
         src={star}
         alt="star design"
-        className="absolute w-16 -right-28 -top-12 rotate-[25deg]"
+        className="absolute w-16 -right-28 -top-12 rotate-[25deg] dark:invert"
       />
       <div className="col-span-1 flex flex-col justify-center mb-8">
         <p className="uppercase tracking-widest text-brand-red">FAQ</p>
-        <h1 className="text-4xl md:text-5xl max-w-lg font-bold mt-1 capitalize">
+        <h1 className="text-4xl md:text-5xl max-w-lg font-bold mt-1 capitalize ">
           Frequently asked questions
         </h1>
       </div>
@@ -50,7 +50,7 @@ const FaqComponent = ({
       <p
         className={`${
           indexForBackgroundColor.includes(index) ? "" : "md:text-background"
-        } text-muted-foreground`}
+        } text-muted-foreground tracking-wide `}
       >
         {answer}
       </p>

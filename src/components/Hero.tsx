@@ -24,12 +24,12 @@ const Hero = () => {
       <Image
         src={star}
         alt="star design"
-        className="absolute w-12 -left-24 top-6"
+        className="absolute w-12 -left-24 top-6 dark:invert"
       />
       <Image
         src={star}
         alt="star design"
-        className="absolute w-16 -right-28 -top-12 rotate-[25deg]"
+        className="absolute w-16 -right-28 -top-12 rotate-[25deg] dark:invert"
       />
 
       {/* content */}
@@ -38,12 +38,12 @@ const Hero = () => {
         <Image
           src={gradient}
           alt="gradient design"
-          className="absolute -z-[101] left-28 -top-28 max-lg:left-20 max-lg:-top-24"
+          className="absolute -z-[101] left-28 -top-28 max-lg:left-20 max-lg:-top-24 dark:opacity-70"
         />
         <Image
           src={star}
           alt="star design"
-          className="absolute w-12 left-36 rotate-45 bottom-[340px] -z-50 max-md:left-16 max-md:-top-12"
+          className="absolute w-12 left-36 rotate-45 bottom-[340px] -z-50 max-md:left-16 max-md:-top-12 dark:invert"
         />
         <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
           {headline}
@@ -67,7 +67,7 @@ const Hero = () => {
         <Image
           src={strip}
           alt="hero strip image"
-          className="max-md:hidden"
+          className="max-md:hidden "
           priority={true}
         />
       </div>
@@ -75,7 +75,7 @@ const Hero = () => {
         <Image
           src={star}
           alt="star design"
-          className="absolute w-12 right-[440px] bottom-[260px]"
+          className="absolute w-12 right-[440px] bottom-[260px] dark:invert"
         />
         {/* gradient */}
         <Image
@@ -85,7 +85,7 @@ const Hero = () => {
         />
         <Image
           src={ellipse}
-          className="absolute mt-4 ml-10"
+          className="absolute mt-4 ml-10 dark:invert"
           alt={"App Mockup image"}
           priority={true}
         />
