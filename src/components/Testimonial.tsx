@@ -4,6 +4,7 @@ import React from "react";
 import testimonial_image from "@/assets/Group 1000002331.png";
 import ellipse from "@/assets/ellipse.svg";
 import { Avatar, AvatarImage } from "./ui/avatar";
+import star from "@/assets/Star.svg";
 
 const Testimonial = () => {
   return (
@@ -13,8 +14,8 @@ const Testimonial = () => {
         <p className="text-3xl md:text-5xl max-w-md mx-auto font-bold mb-8 mt-1 capitalize">
           what our users say about us?
         </p>
-        <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 items-start">
-          <div className="relative col-span-1">
+        <div className="relative h-full w-full grid grid-cols-1 md:grid-cols-2 items-start">
+          <div className="relative col-span-1 place-self-center">
             <Image
               src={testimonial_image}
               className="max-md:pl-8"
@@ -26,7 +27,7 @@ const Testimonial = () => {
               alt={"App Mockup image"}
             />
           </div>
-          <div className="col-span-1 flex flex-col justify-center md:mt-16">
+          <div className=" col-span-1 flex flex-col justify-center md:mt-16">
             <h1 className="text-xl md:text-[28px] max-w-md text-start font-bold md:mb-8 mt-1 capitalize">
               the best financial accounting app ever!
             </h1>
@@ -53,6 +54,11 @@ const Testimonial = () => {
             </div>
             <p className="text-start font-bold"> - Nick Jonas</p>
           </div>
+          <Image
+            src={star}
+            alt="star design"
+            className="absolute w-12 md:left-0 bottom-0 -z-50  max-md:right-8 max-md:-bottom-24"
+          />
         </div>
       </span>
     </div>

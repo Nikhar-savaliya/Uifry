@@ -1,12 +1,18 @@
 import React from "react";
 
 import data from "@/data.json";
-
+import star from "@/assets/Star.svg";
+import Image from "next/image";
 const Faqs = () => {
   const faqArray = data.faqs;
 
   return (
-    <section className="w-full h-full mt-16 p-8" id="faqs">
+    <section className="relative w-full h-full mt-16 p-8" id="faqs">
+      <Image
+        src={star}
+        alt="star design"
+        className="absolute w-16 -right-28 -top-12 rotate-[25deg]"
+      />
       <div className="col-span-1 flex flex-col justify-center mb-8">
         <p className="uppercase tracking-widest text-brand-red">FAQ</p>
         <h1 className="text-4xl md:text-5xl max-w-lg font-bold mt-1 capitalize">

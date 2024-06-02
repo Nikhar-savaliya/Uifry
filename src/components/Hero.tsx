@@ -9,15 +9,35 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { CirclePlay, MoveRight } from "lucide-react";
 
+import star from "@/assets/Star.svg";
+
 const Hero = () => {
   const { headline, subheadline, ctaButtons } = data.hero;
 
   return (
     <div
-      className="mt-4 w-full h-full grid grid-cols-1 md:grid-cols-2"
+      className="mt-4 w-full h-full grid grid-cols-1 md:grid-cols-2 relative "
       id="home"
     >
-      <div className="col-span-1 mt-32 flex flex-col justify-center p-8">
+      {/* stars */}
+      <Image
+        src={star}
+        alt="star design"
+        className="absolute w-12 -left-24 top-6"
+      />
+      <Image
+        src={star}
+        alt="star design"
+        className="absolute w-16 -right-28 -top-12 rotate-[25deg]"
+      />
+
+      {/* content */}
+      <div className="col-span-1 mt-32 flex flex-col justify-center p-8 relative">
+        <Image
+          src={star}
+          alt="star design"
+          className="absolute w-12 left-36 rotate-45 bottom-[340px] -z-50 max-md:left-16 max-md:-top-12"
+        />
         <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
           {headline}
         </h1>
@@ -40,6 +60,11 @@ const Hero = () => {
         <Image src={strip} alt="hero strip image" className="max-md:hidden" />
       </div>
       <div className="max-md:hidden relative col-span-1 max-2xl:overflow-hidden">
+        <Image
+          src={star}
+          alt="star design"
+          className="absolute w-12 right-[440px] bottom-[260px]"
+        />
         <Image
           src={ellipse}
           className="absolute mt-4 ml-10"

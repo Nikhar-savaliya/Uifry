@@ -5,12 +5,18 @@ import data from "@/data.json";
 import mockup from "@/assets/advantages_image.svg";
 import mockup2 from "@/assets/advantages_image2.svg";
 import { Bell, Box, LucideIcon, Package2, Sparkle } from "lucide-react";
+import star from "@/assets/Star.svg";
 
 const Advantage = () => {
   const advantagesArray = data.advantages;
   return (
     <>
-      <div className="md:mt-48 h-full w-full grid grid-cols-1 md:grid-cols-2">
+      <div className="md:mt-48 relative h-full w-full grid grid-cols-1 md:grid-cols-2">
+        <Image
+          src={star}
+          alt="star design"
+          className="absolute w-16 -right-28 top-28 rotate-[25deg]"
+        />
         <div className="col-span-1 px-8 flex flex-col justify-center mt-16">
           <p className="uppercase tracking-widest text-brand-red">Advantages</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 mt-1 capitalize">
@@ -20,7 +26,12 @@ const Advantage = () => {
         </div>
         <Image src={mockup} className="" alt={"App Mockup image"} />
       </div>
-      <div className=" h-full w-full grid -grid-cols-1 md:grid-cols-2">
+      <div className="relative h-full w-full grid -grid-cols-1 md:grid-cols-2">
+        <Image
+          src={star}
+          alt="star design"
+          className="absolute w-12 left-1/2 -translate-x-1/2 max-md:left-1/4 max-md:-top-24"
+        />
         <Image
           src={mockup2}
           className="max-md:order-2 col-span-1"
@@ -29,6 +40,11 @@ const Advantage = () => {
         <div className="col-span-1 p-8 flex flex-col justify-center md:mb-24">
           <AdvantageItem {...advantagesArray[1]} />
         </div>
+        <Image
+          src={star}
+          alt="star design"
+          className="absolute w-16 right-16 bottom-28 rotate-[25deg] -z-50 max-lg:bottom-0"
+        />
       </div>
     </>
   );

@@ -41,10 +41,17 @@
   }
   body {
     @apply bg-background text-foreground;
+
     font-family: "Clash Display", "Courier New", Courier, monospace;
+  }
+  .grainy {
+    background-image: url("../assets/grainy.svg");
+    background-repeat: repeat;
+    background-size: 250px;
   }
 
   .download-background {
+    @apply bg-background text-foreground;
     background-image: url("../assets/download_img.png");
     background-size: cover;
     background-repeat: no-repeat;

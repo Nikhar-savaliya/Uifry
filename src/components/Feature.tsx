@@ -3,16 +3,28 @@ import Image from "next/image";
 
 import data from "@/data.json";
 import mockup from "@/assets/feature_image1.png";
+import star from "@/assets/Star.svg";
 import { Box, Package2, Sparkle } from "lucide-react";
 
 const Feature = () => {
   const featuresArray = data.features;
   return (
     <div
-      className="mt-4 h-full w-full grid grid-cols-1 md:grid-cols-2"
+      className="mt-4 h-full w-full grid grid-cols-1 md:grid-cols-2 relative "
       id="features"
     >
-      <Image src={mockup} className="col-span-1" alt={"App Mockup image"} />
+      {/* stars */}
+      <Image
+        src={star}
+        alt="star design"
+        className="absolute w-12 -left-24 top-1/4"
+      />
+
+      <Image
+        src={mockup}
+        className="col-span-1 place-self-center"
+        alt={"App Mockup image"}
+      />
       <div className="col-span-1 flex flex-col justify-center md:mt-16 p-8">
         <p className="uppercase tracking-widest text-brand-red">features</p>
         <h1 className="text-5xl font-bold mb-8 mt-1 capitalize">

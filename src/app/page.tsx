@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl mx-auto md:pt-[40px] max-2xl:overflow-hidden">
       <Navbar />
       <Hero />
       <Feature />

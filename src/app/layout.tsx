@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-w-screen min-h-screen">{children}</body>
+      <body className="min-w-screen min-h-screen relative ">
+        <div className="grainy absolute inset-0 -z-[100] opacity-30 bg-white "></div>
+        {children}
+      </body>
     </html>
   );
 }

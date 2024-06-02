@@ -7,7 +7,7 @@ import MobileNavMenu from "./MobileNavMenu";
 
 const Navbar = () => {
   return (
-    <div className="h-16 w-full sticky top-0 z-50 inset-x-0 bg-background/80 backdrop-blur-md antialiased flex items-center md:mt-[40px] max-md:p-4">
+    <div className="h-16 w-full flex items-center max-md:p-4">
       <div className="w-full h-full flex items-center justify-between">
         <div className="flex items-center h-full">
           <Link href={"/"}>
