@@ -4,7 +4,7 @@ import Image from "next/image";
 import data from "@/data.json";
 import mockup from "@/assets/advantages_image.svg";
 import mockup2 from "@/assets/advantages_image2.svg";
-import { Bell, Box, LucideIcon, Package2, Sparkle } from "lucide-react";
+import { Bell, Sparkle } from "lucide-react";
 import star from "@/assets/Star.svg";
 import gradient from "@/assets/gradient1.svg";
 
