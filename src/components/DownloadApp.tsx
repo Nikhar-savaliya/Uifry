@@ -7,7 +7,7 @@ import { Download } from "lucide-react";
 
 const DownloadApp = () => {
   return (
-    <div className="md:my-48 h-full w-full grid grid-cols-1 md:grid-cols-2 rounded-xl max-md:bg-black text-primary-foreground max-md:place-content-start download-background p-8">
+    <div className="md:my-48 md:py-24 h-full w-full grid grid-cols-1 md:grid-cols-2 md:rounded-xl max-md:bg-black text-primary-foreground max-md:place-content-start download-background p-8">
       <div className="col-span-1 md:px-8 flex flex-col  md:ml-8">
         <p className="uppercase tracking-widest text-brand-red">Download</p>
         <h1 className="text-4xl  md:text-5xl font-bold mb-8 mt-1 capitalize">

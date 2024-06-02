@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import mockup from "@/assets/iPhone-13-Pro-Front.svg";
+import ellipse from "@/assets/ellipse.svg";
 import strip from "@/assets/hero-strip.svg";
 import data from "@/data.json";
 import { Button } from "./ui/button";
@@ -38,7 +39,12 @@ const Hero = () => {
         </div>
         <Image src={strip} alt="hero strip image" className="max-md:hidden" />
       </div>
-      <div className="max-md:hidden relative col-span-1 ">
+      <div className="max-md:hidden relative col-span-1 max-2xl:overflow-hidden">
+        <Image
+          src={ellipse}
+          className="absolute mt-4 ml-10"
+          alt={"App Mockup image"}
+        />
         <Image
           src={mockup}
           className="absolute mt-40 ml-40"

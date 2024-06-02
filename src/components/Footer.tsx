@@ -29,17 +29,16 @@ const Footer = () => {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="w-full max-md:mt-16 p-8"
+      className="w-full max-w-7xl mx-auto max-md:mt-16 p-8"
     >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-2">
-        <div className="flex flex-col  justify-between md:flex-row">
+      <div className="mx-auto max-w-7xl  px-2">
+        <div className="flex flex-col md:flex-row justify-between ">
           <div className="flex flex-col mb-8 md:mb-0 gap-4 items-start mr-16">
             <Image
               priority={true}
-              unoptimized={true}
               width={100}
               height={40}
               src={logo}
@@ -49,13 +48,13 @@ const Footer = () => {
             <p className="text-md max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
               <Mail className="text-brand-red " /> help@frybix.com
             </p>
-            <p className="text-md max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
+            <p className="text-md text-nowrap max-w-xs leading-6 text-muted-foreground flex items-center gap-2">
               <Phone className="text-brand-red " /> +1 234 456 678 89
             </p>
           </div>
 
           {/* Navigations */}
-          <div className="grid gap-10 md:gap-14 grid-cols-2 md:grid-cols-4 mr-auto">
+          <div className="grid gap-6 md:gap-14 grid-cols-2 lg:grid-cols-4 mr-auto">
             <FooterLinkComponent
               title={"links"}
               linksArray={navigation.links}
@@ -73,18 +72,15 @@ const Footer = () => {
               linksArray={navigation.newsletter}
             />
           </div>
-
-          <form className="flex flex-col gap-4 items-end mt-10">
-            <input
-              type="text"
-              placeholder="Email"
-              className="border p-4 rounded"
-            />
-            <Button size={"lg"} className="w-fit">
-              Send
-            </Button>
-          </form>
         </div>
+        <form className="max-w-xl mt-12 grid grid-cols-4 gap-4 items-end">
+          <input
+            type="text"
+            placeholder="Email"
+            className="border p-4 rounded col-span-3"
+          />
+          <Button className="col-span-1 h-full w-full px-8">Send</Button>
+        </form>
         <div className="mt-16 border-t pt-8 sm:mt-20 lg:mt-24 ">
           <p className="max-md:text-xs leading-5 text-muted-foreground text-center mb-8">
             Copyright 2022 uifry.com all rights reserved

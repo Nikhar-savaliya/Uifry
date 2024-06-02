@@ -34,7 +34,7 @@ const FaqComponent = ({
   const indexForBackgroundColor = [1, 2, 5, 6, 9, 10];
   return (
     <div
-      className={`rounded-lg md:p-8 my-5 mr-5 ${
+      className={`rounded-lg max-md:bg-secondary/50 max-md:p-4 max-md:my-0 max-md:mr-0 md:p-8 my-5 mr-5 ${
         indexForBackgroundColor.includes(index)
           ? ""
           : "md:bg-brand-red md:text-background"
