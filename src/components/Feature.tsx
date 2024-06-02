@@ -46,8 +46,8 @@ const Feature = () => {
           uifry premium
         </h1>
         <div className="flex flex-col gap-8 ">
-          {featuresArray.map((feat) => {
-            return <FeatureItem {...feat} />;
+          {featuresArray.map((feat, index) => {
+            return <FeatureItem {...feat} key={index} />;
           })}
         </div>
       </div>
