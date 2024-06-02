@@ -6,6 +6,7 @@ import mockup from "@/assets/advantages_image.svg";
 import mockup2 from "@/assets/advantages_image2.svg";
 import { Bell, Box, LucideIcon, Package2, Sparkle } from "lucide-react";
 import star from "@/assets/Star.svg";
+import gradient from "@/assets/gradient1.svg";
 
 const Advantage = () => {
   const advantagesArray = data.advantages;
@@ -24,7 +25,15 @@ const Advantage = () => {
           </h1>
           <AdvantageItem {...advantagesArray[0]} />
         </div>
-        <Image src={mockup} className="" alt={"App Mockup image"} />
+        <div className="relative">
+          {/* gradient */}
+          <Image
+            src={gradient}
+            alt="gradient design"
+            className="absolute -z-[101] left-0 bottom-4"
+          />
+          <Image src={mockup} className="" alt={"App Mockup image"} />
+        </div>
       </div>
       <div className="relative h-full w-full grid -grid-cols-1 md:grid-cols-2">
         <Image
@@ -32,11 +41,19 @@ const Advantage = () => {
           alt="star design"
           className="absolute w-12 left-1/2 -translate-x-1/2 max-md:left-1/4 max-md:-top-24"
         />
-        <Image
-          src={mockup2}
-          className="max-md:order-2 col-span-1"
-          alt={"App Mockup image"}
-        />
+        <div className="relative max-md:order-2">
+          {/* gradient */}
+          <Image
+            src={gradient}
+            alt="gradient design"
+            className="absolute -z-[101] right-0 bottom-4"
+          />
+          <Image
+            src={mockup2}
+            className=" col-span-1"
+            alt={"App Mockup image"}
+          />
+        </div>
         <div className="col-span-1 p-8 flex flex-col justify-center md:mb-24">
           <AdvantageItem {...advantagesArray[1]} />
         </div>

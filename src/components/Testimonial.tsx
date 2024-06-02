@@ -5,6 +5,7 @@ import testimonial_image from "@/assets/Group 1000002331.png";
 import ellipse from "@/assets/ellipse.svg";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import star from "@/assets/Star.svg";
+import gradient from "@/assets/gradient1.svg";
 
 const Testimonial = () => {
   return (
@@ -16,6 +17,12 @@ const Testimonial = () => {
         </p>
         <div className="relative h-full w-full grid grid-cols-1 md:grid-cols-2 items-start">
           <div className="relative col-span-1 place-self-center">
+            {/* gradient */}
+            <Image
+              src={gradient}
+              alt="gradient design"
+              className="absolute -z-[101] -left-16 top-16 max-md:left-3 max-md:top-3"
+            />
             <Image
               src={testimonial_image}
               className="max-md:pl-8"

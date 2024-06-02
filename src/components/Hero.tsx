@@ -10,6 +10,7 @@ import Link from "next/link";
 import { CirclePlay, MoveRight } from "lucide-react";
 
 import star from "@/assets/Star.svg";
+import gradient from "@/assets/gradient1.svg";
 
 const Hero = () => {
   const { headline, subheadline, ctaButtons } = data.hero;
@@ -33,6 +34,12 @@ const Hero = () => {
 
       {/* content */}
       <div className="col-span-1 mt-32 flex flex-col justify-center p-8 relative">
+        {/* gradient */}
+        <Image
+          src={gradient}
+          alt="star design"
+          className="absolute -z-[101] left-28 -top-28 max-lg:left-20 max-lg:-top-24"
+        />
         <Image
           src={star}
           alt="star design"
@@ -59,11 +66,17 @@ const Hero = () => {
         </div>
         <Image src={strip} alt="hero strip image" className="max-md:hidden" />
       </div>
-      <div className="max-md:hidden relative col-span-1 max-2xl:overflow-hidden">
+      <div className="max-md:hidden relative col-span-1">
         <Image
           src={star}
           alt="star design"
           className="absolute w-12 right-[440px] bottom-[260px]"
+        />
+        {/* gradient */}
+        <Image
+          src={gradient}
+          alt="gradient design"
+          className="absolute -z-[101] left-14 bottom-12 max-lg:bottom-56 max-lg:left-8"
         />
         <Image
           src={ellipse}

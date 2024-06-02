@@ -3,6 +3,7 @@ import React from "react";
 import mockup from "@/assets/download_img.png";
 import Image from "next/image";
 import star from "@/assets/Star.svg";
+import gradient from "@/assets/gradient1.svg";
 
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
@@ -10,6 +11,12 @@ import { Download } from "lucide-react";
 const DownloadApp = () => {
   return (
     <div className="relative md:my-48 md:py-24 h-full w-full grid grid-cols-1 md:grid-cols-2 md:rounded-xl max-md:bg-black text-primary-foreground max-md:place-content-start download-background p-8">
+      {/* gradient */}
+      <Image
+        src={gradient}
+        alt="gradient design"
+        className="absolute -z-[101] -left-44 -top-44 max-md:left-3 max-md:top-3"
+      />
       <Image
         src={star}
         alt="star design"
