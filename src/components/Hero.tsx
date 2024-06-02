@@ -37,7 +37,7 @@ const Hero = () => {
         {/* gradient */}
         <Image
           src={gradient}
-          alt="star design"
+          alt="gradient design"
           className="absolute -z-[101] left-28 -top-28 max-lg:left-20 max-lg:-top-24"
         />
         <Image
@@ -64,7 +64,12 @@ const Hero = () => {
             <Link href={ctaButtons[1].link}>{ctaButtons[1].text}</Link>
           </Button>
         </div>
-        <Image src={strip} alt="hero strip image" className="max-md:hidden" />
+        <Image
+          src={strip}
+          alt="hero strip image"
+          className="max-md:hidden"
+          priority={true}
+        />
       </div>
       <div className="max-md:hidden relative col-span-1">
         <Image
@@ -82,21 +87,25 @@ const Hero = () => {
           src={ellipse}
           className="absolute mt-4 ml-10"
           alt={"App Mockup image"}
+          priority={true}
         />
         <Image
           src={mockup}
           className="absolute mt-40 ml-40"
           alt={"App Mockup image"}
+          priority={true}
         />
         <Image
           src={mockup}
           className="absolute mt-20 ml-20"
           alt={"App Mockup image"}
+          priority={true}
         />
         <Image
           src={mockup}
           className="absolute mt-0 ml-0"
           alt={"App Mockup image"}
+          priority={true}
         />
       </div>
     </div>

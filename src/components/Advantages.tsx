@@ -32,7 +32,12 @@ const Advantage = () => {
             alt="gradient design"
             className="absolute -z-[101] left-0 bottom-4"
           />
-          <Image src={mockup} className="" alt={"App Mockup image"} />
+          <Image
+            src={mockup}
+            priority={true}
+            className=""
+            alt={"App Mockup image"}
+          />
         </div>
       </div>
       <div className="relative h-full w-full grid -grid-cols-1 md:grid-cols-2">

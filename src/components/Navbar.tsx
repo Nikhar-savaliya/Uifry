@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between">
         <div className="flex items-center h-full">
           <Link href={"/"}>
-            <Image src={logo} alt="Logo" />
+            <Image src={logo} alt="Logo" priority={true} />
           </Link>
           <ul className="max-md:hidden flex items-center gap-x-6 ml-9 font-medium text-xl">
             <li>
