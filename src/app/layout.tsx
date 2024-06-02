@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="min-w-screen min-h-screen relative">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
